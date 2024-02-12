@@ -99,7 +99,7 @@ button {
 
 /* Hover effect for icons */
 .confirm-button i:hover {
-    color: orange;
+    color: rgb(240, 189, 94);
 }
 
 .cancel-button i:hover {
