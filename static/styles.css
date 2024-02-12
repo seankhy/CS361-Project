@@ -1,0 +1,132 @@
+/* static/styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #b9cca7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: #fbfbfb;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    font-size: 24px;
+    text-align: left;
+    color: #333;
+    padding: 20px 0;
+}
+
+.expense-list {
+    padding: auto;
+    margin: auto;
+}
+
+.expense-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto; /* equally divides the space for name, amount, and note, and auto for the trash icon */
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #9c9a9a;
+}
+
+.expense-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+}
+
+.expense-details .label {
+    font-weight: bold;
+}
+
+.add-button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-button:hover {
+    background: #39495a;
+}
+
+.remove-button button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ff4500;
+    font-size: 1.5rem;
+}
+
+.remove-button button:hover {
+    color: #4d1818;
+}
+
+
+
+.fa-plus, .fa-trash {
+    margin-right: 5px;
+}
+
+.fa-check, .fa-xmark {
+    font-size: 25px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.confirm-button i, .cancel-button i {
+    background: none;
+    border: none;
+    margin-right: 20px;
+    font-size: 40px;
+    color: black; 
+    cursor: pointer;
+}
+
+/* Hover effect for icons */
+.confirm-button i:hover {
+    color: orange;
+}
+
+.cancel-button i:hover {
+    color: red;
+}
+
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5%;
+}
+
+label {
+    padding: 1%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .header {
+        font-size: 20px;
+    }
+}
+
+
+span {
+    margin-right: 10px;
+}

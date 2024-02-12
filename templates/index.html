@@ -1,0 +1,30 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="https://kit.fontawesome.com/8c0b379895.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to the Expense Tracker</h1>
+            <a href="/add" class="add-button"><i class="fa-solid fa-plus"></i></a>
+        </div>
+        <ul class="expense-list">
+            {% for expense in expenses %}
+            <li class="expense-item">
+                <span class="expense-details"><span class="label">Name: </span> {{ expense.name }}</span>
+                <span class="expense-details"><span class="label">Amount: </span> ${{ expense.amount }}</span>
+                <span class="expense-details"><span class="label">Note:</span> {{ expense.note }}</span>
+                <form action="{{ url_for('remove_expense', expense_id=expense.id) }}" method="post" class="remove-button">
+                    <button type="submit"><i class="fa-solid fa-trash"></i></button>
+                </form>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
