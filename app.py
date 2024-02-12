@@ -10,7 +10,6 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # Initialize the database
 db = SQLAlchemy(app)
 
-# Define the Expense model directly within app.py for simplicity
 class Expense(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
@@ -19,7 +18,6 @@ class Expense(db.Model):
 
 @app.route('/')
 def index():
-    # Fetch all expenses to display on the main page
     expenses = Expense.query.all()
     return render_template('index.html', expenses=expenses)
 

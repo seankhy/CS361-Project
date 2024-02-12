@@ -28,7 +28,7 @@ body {
 
 .expense-item {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) auto; /* equally divides the space for name, amount, and note, and auto for the trash icon */
+    grid-template-columns: repeat(3, 1fr) auto; 
     gap: 10px;
     align-items: center;
     padding: 10px;
@@ -38,7 +38,7 @@ body {
 .expense-details {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Aligns content to the left */
+    justify-content: flex-start;
 }
 
 .expense-details .label {
