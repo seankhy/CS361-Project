@@ -31,6 +31,14 @@ body {
     
 }
 
+.container4 {
+    width: 95%;
+    margin: auto;
+    background: #f0ed8b;
+    padding: 15px;
+    
+}
+
 .header {
     font-size: 24px;
     text-align: left;
@@ -158,7 +166,7 @@ button {
 
 /* Hover effect for icons */
 .confirm-button i:hover {
-    color: rgb(240, 189, 94);
+    color: rgb(247, 130, 34);
 }
 
 .cancel-button i:hover {
