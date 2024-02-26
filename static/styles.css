@@ -120,6 +120,10 @@ body {
     margin-top: 20px;
 }
 
+.history-button:hover {
+    background: #39495a;
+}
+
 
 .export-button{
     background: #023255;
@@ -131,6 +135,10 @@ body {
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+}
+
+.export-button:hover {
+    background: #6f7071;
 }
 
 
@@ -146,6 +154,10 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
+}
+
+.home-button:hover {
+    background-color: #9ca19c;
 }
 
 
