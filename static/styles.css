@@ -14,6 +14,23 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+.container2 {
+    width: 80%;
+    margin: auto;
+    background: #d7bebe;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container3 {
+    width: 90%;
+    margin: auto;
+    background: #c1e0b1;
+    padding: 15px;
+    
+}
+
 .header {
     font-size: 24px;
     text-align: left;
@@ -28,7 +45,8 @@ body {
 
 .expense-item {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) auto; 
+    grid-template-columns: repeat(4, 1fr) auto; 
+    /* grid-template-columns: auto auto auto 1fr auto; */
     gap: 10px;
     align-items: center;
     padding: 10px;
@@ -81,6 +99,47 @@ body {
 .fa-check, .fa-xmark {
     font-size: 25px;
 }
+
+.history-button {
+    background: #32a5f8;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.export-button{
+    background: #023255;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.home-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
 
 button {
     background: none;
