@@ -6,3 +6,6 @@ You have to run my app locally first and get the localhost URL.
 An example call might look like " requests.get("http://localhost:5000/export") "
 
 Receiving data from the microservice involves handling the response from the aforementioned request. Once the request is made, the microservice processes it and sends back a response, which the client application receives. In the case of an export feature, it should be a CSV file containing the requested data. The client application will check the HTTP status code of the response to ensure the request was successful (200 OK status). It can then read the response body to access the returned data. In this case, the data you  receiving should be a CSV file with specific elements.
+
+
+<img width="765" alt="Screenshot 2024-02-26 at 8 03 30 PM" src="https://github.com/seankhy/CS361-Project/assets/130083506/020109e1-6170-4790-98e5-eeeab2c039a1">
